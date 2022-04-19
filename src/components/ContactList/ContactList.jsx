@@ -5,7 +5,6 @@ import s from './ContactList.module.css';
 class ContactList extends Component {
     
     render() {
-        
         return (
             <ul className={s.list}>
                 {this.props.dataContacts.map(({ id, name, number }) => (

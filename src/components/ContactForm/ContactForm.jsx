@@ -10,7 +10,6 @@ const useLocalStorage = (key, defaultValue) => {
     window.localStorage.setItem(key, JSON.stringify(state))
   }, [key, state]);
   return [state, setState];
-
 };
 
 export default function ContactForm({onSubmit}) {
@@ -43,7 +42,6 @@ export default function ContactForm({onSubmit}) {
         setNumber('');
     };
 
-  
     return (
         <form className={s.form} onSubmit={onHandleSubmit}>
             <label className={s.name}> 
